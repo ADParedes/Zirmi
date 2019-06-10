@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quick_access_configuration>
+   <tool display_condition="always" section_id="Phagosight" tab_id="shortcuts" tool_id="Zirmi 0 Load imaging metadata matfile" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="Phagosight" tab_id="shortcuts" tool_id=" Zirmi 7 Save altered handles" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="Phagosight" tab_id="shortcuts" tool_id="Zirmi 2 Load Phagosight Analysis handles" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="Phagosight" tab_id="shortcuts" tool_id="Zirmi 3 Show Phagosight Analysis *** Req." toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="Phagosight" tab_id="shortcuts" tool_id="Zirmi 4 Trace Regions***" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="Phagosight" tab_id="shortcuts" tool_id="Zirmi 5A Plot Tracks over BF" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" label_visible="true" section_id="Manipulate" tab_id="shortcuts" tool_id="DeleteTracks" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" label_visible="true" section_id="Manipulate" tab_id="shortcuts" tool_id="BreakapartTrack" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" label_visible="true" section_id="Manipulate" tab_id="shortcuts" tool_id="JoinTracks" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" label_visible="true" section_id="Phagosight" tab_id="shortcuts" tool_id="Zirmi 4 Trace Wound Region &amp; Notochord *** Req." toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="Phagosight" tab_id="shortcuts" tool_id="Zirmi0 Load imaging metadata matfile" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="Phagosight" tab_id="shortcuts" tool_id="Zebra0-Load imaging metadata (matfile)" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="Phagosight" tab_id="shortcuts" tool_id="Zebra2-Load Phagosight Analysis" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="general" tab_id="shortcuts" tool_id="ROS Values Redo" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="general" tab_id="shortcuts" tool_id="QD Plot ROS over Frames" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="general" tab_id="shortcuts" tool_id="QD.MultipleScatterPlot" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="general" tab_id="shortcuts" tool_id="QD Multiple Scatter Plot" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="general" tab_id="shortcuts" tool_id="Q&amp;&amp;&amp;D Multiple Scatter Plot" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="general" tab_id="shortcuts" tool_id="Q&amp;D Multiple Scatter Plot" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="general" tab_id="shortcuts" tool_id="%Q&amp;D Multiple Scatter Plot" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="Phagosight" tab_id="shortcuts" tool_id="Zebra0-Load matfiles" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="Phagosight" tab_id="shortcuts" tool_id="Zebra3-LoadAnalysis" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="general" tab_id="shortcuts" tool_id="%Practice 1" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="general" tab_id="shortcuts" tool_id="Remove Frame" toolset_id="matlab_shortcut_toolset"/>
+   <tool display_condition="always" section_id="house_keeping" tab_id="shortcuts" tool_id="new_shortcut" toolset_id="matlab_shortcut_toolset"/>
+   <tool common="true" display_condition="always" section_id="common_section" tab_id="common_tab" tool_id="save" toolset_id="common_tools"/>
+   <tool common="true" display_condition="always" section_id="common_section" tab_id="common_tab" tool_id="cut" toolset_id="common_tools"/>
+   <tool common="true" display_condition="always" section_id="common_section" tab_id="common_tab" tool_id="copy" toolset_id="common_tools"/>
+   <tool common="true" display_condition="always" section_id="common_section" tab_id="common_tab" tool_id="paste" toolset_id="common_tools"/>
+   <tool common="true" display_condition="always" section_id="common_section" tab_id="common_tab" tool_id="undo" toolset_id="common_tools"/>
+   <tool common="true" display_condition="always" section_id="common_section" tab_id="common_tab" tool_id="redo" toolset_id="common_tools"/>
+   <tool display_condition="always" section_id="common_section" tab_id="common_tab" tool_id="switch_windows" toolset_id="common_tools"/>
+   <tool common="true" display_condition="always" section_id="common_section" tab_id="common_tab" tool_id="help" toolset_id="common_tools"/>
+   <tool display_condition="always" section_id="code_folding" tab_id="view" tool_id="fold_expand_all" toolset_id="editor_view_toolset"/>
+   <tool display_condition="always" section_id="code_folding" tab_id="view" tool_id="fold_collapse_all" toolset_id="editor_view_toolset"/>
+</quick_access_configuration>

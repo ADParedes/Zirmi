@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Editor version="1.0">
+   <File absPath="C:\Users\adpar\Dropbox\Zirmi\Script_A_DataFormatting" lastWrittenTime="1559168374207" name="Troubleshooting_zirmiAdelim.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="C:\Users\adpar\Dropbox\Zirmi\Script_A_DataFormatting" lastWrittenTime="1559168412241" name="Troubleshooting_Zirmi_A_Reformat_Export.m">
+      <CodeFolds version="1.0">
+         <FoldType name="cell">
+            <Fold endOffset="1900" startOffset="1057" state="collapsed"/>
+            <Fold endOffset="2464" startOffset="1920" state="collapsed"/>
+            <Fold endOffset="3165" startOffset="3082" state="collapsed"/>
+            <Fold endOffset="4622" startOffset="3251" state="collapsed"/>
+            <Fold endOffset="6760" startOffset="5450" state="collapsed"/>
+         </FoldType>
+      </CodeFolds>
+   </File>
+   <File absPath="C:\Users\adpar\Dropbox\Zirmi\Script_A_DataFormatting" lastWrittenTime="1559330650562" name="Zirmi_A_Reformat_Export_v1.m">
+      <CodeFolds version="1.0">
+         <FoldType name="cell">
+            <Fold endOffset="727" startOffset="62" state="collapsed"/>
+            <Fold endOffset="1210" startOffset="764" state="collapsed"/>
+            <Fold endOffset="1625" startOffset="1245" state="collapsed"/>
+            <Fold endOffset="2400" startOffset="1636" state="collapsed"/>
+            <Fold endOffset="21756" startOffset="18756" state="collapsed"/>
+            <Fold endOffset="25834" startOffset="21805" state="collapsed"/>
+            <Fold endOffset="26414" startOffset="25868" state="collapsed"/>
+            <Fold endOffset="26658" startOffset="26422" state="collapsed"/>
+         </FoldType>
+      </CodeFolds>
+   </File>
+   <File absPath="C:\Users\adpar\Dropbox\Zirmi\Script_C_CellKineticMeasures" lastWrittenTime="1560181819419" name="Zirmi_C1_CellKineticMeasures.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="C:\Users\adpar\Dropbox\Zirmi\Script_C_CellKineticMeasures" lastWrittenTime="1560181822082" name="Zirmi_C2_DatabaseCellKineticsMeasures.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="C:\Users\adpar\Sync\Scripts_m\Zirmi\ShortCuts" lastWrittenTime="1560203925742" name="Zirmi4TraceWoundRegionNotochord.m">
+      <CodeFolds version="1.0"/>
+   </File>
+</Editor>

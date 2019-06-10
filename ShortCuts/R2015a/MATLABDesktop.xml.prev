@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Layout CurrentFolderBarBelow="yes">
+   <Version Major="3" Minor="1"/>
+   <Frame StatusBarShowing="yes" TitlesShowing="yes">
+      <ToolBars>
+         <ToolBar Label="Current Folder" Name="Current DirectoryToolBar" Showing="yes"/>
+      </ToolBars>
+      <Location External="yes" Height="1037" Type="floating" Width="1322" X="-10" Y="0"/>
+      <Borders>
+         <Right>
+            <View Name="Workspace" Title="Workspace"/>
+         </Right>
+         <Left>
+            <View Name="Current Directory" Title="Current Folder"/>
+         </Left>
+      </Borders>
+      <Split Orientation="topBottom" Position="608">
+         <Group Name="Editor" Title="Editor"/>
+         <View Name="Command Window" Title="Command Window"/>
+      </Split>
+      <QuickAccessLocation Region="right_of_tabs"/>
+   </Frame>
+   <Group Alphabetize="no" CollapseUndockedDocumentToolstrips="no" Dock="yes" Guest="no" Name="Editor" PropertyClass="com.mathworks.mde.editor.EditorGroup" SelectionOrder="26" Show="yes" ShowViews="no" Title="Editor">
+      <Location Context="docked" Height="608" ParentHeight="828" ParentWidth="1266" Path="N" Type="nested" Width="1266" X="18" Y="176"/>
+      <Location Context="nested" Height="608" ParentHeight="828" ParentWidth="1266" Path="N" Type="nested" Width="1266" X="18" Y="176"/>
+      <Location Context="undocked" External="yes" Type="floating"/>
+      <Location Context="document" Maximized="yes" Type="floating"/>
+      <DocumentArea Arrangement="maximized" Bar="top" Empty="no" MaxBarWidth="240" Showing="yes" ShrinkTabs="no"/>
+   </Group>
+   <Group Alphabetize="no" CollapseUndockedDocumentToolstrips="no" Dock="yes" Guest="no" Name="Figures" PropertyClass="com.mathworks.hg.peer.FiguresGroup" Show="no" ShowViews="no" Title="Figures">
+      <Location Context="docked" Height="564" ParentHeight="847" ParentWidth="1880" Path="N" Type="nested" Width="1880" X="20" Y="168">
+         <ReferenceHierarchy>
+            <Split Orientation="topBottom" Position="564">
+               <Group Name="Figures" Title="Figures"/>
+               <View Name="Command Window" Title="Command Window"/>
+            </Split>
+         </ReferenceHierarchy>
+      </Location>
+      <Location Context="nested" Height="564" ParentHeight="847" ParentWidth="1880" Path="N" Type="nested" Width="1880" X="20" Y="168">
+         <ReferenceHierarchy>
+            <Split Orientation="topBottom" Position="564">
+               <Group Name="Figures" Title="Figures"/>
+               <View Name="Command Window" Title="Command Window"/>
+            </Split>
+         </ReferenceHierarchy>
+      </Location>
+      <Location Context="document" EntirelyVisible="yes" External="yes" Height="379" Type="floating" Width="256" X="96" Y="205"/>
+      <Split Orientation="topBottom" Position="0.667">
+         <Split Orientation="leftRight" Position="0.25">
+            <View Name="Figure Palette" Title=""/>
+            <Split Orientation="leftRight" Position="0.667">
+               <Documents Name="Figures" Title=""/>
+               <View Name="Plot Browser" Title=""/>
+            </Split>
+         </Split>
+         <View Name="Property Editor" Title=""/>
+      </Split>
+      <DocumentArea Arrangement="maximized" Bar="top" Empty="yes" MaxBarWidth="240" Showing="no" ShrinkTabs="no"/>
+   </Group>
+   <Group Alphabetize="no" CollapseUndockedDocumentToolstrips="no" Dock="no" Guest="no" Name="Web Browser" PropertyClass="com.mathworks.mde.webbrowser.WebBrowserGroup" Show="no" ShowViews="no" Title="Web Browser"/>
+   <Group Alphabetize="no" CollapseUndockedDocumentToolstrips="no" Dock="yes" Guest="no" Name="Array Editor" Show="no" ShowViews="no" Title="Variables">
+      <Location Context="docked" Path="WN" Type="nested" X="40" Y="75">
+         <ReferenceHierarchy>
+            <Split Orientation="leftRight">
+               <Split Orientation="topBottom">
+                  <Group Name="Array Editor" Title="Variables"/>
+                  <View Name="Command Window" Title="Command Window"/>
+               </Split>
+               <View Name="Workspace" Title="Workspace"/>
+            </Split>
+         </ReferenceHierarchy>
+      </Location>
+      <Location Context="nested" Path="WN" Type="nested" X="40" Y="75">
+         <ReferenceHierarchy>
+            <Split Orientation="leftRight">
+               <Split Orientation="topBottom">
+                  <Group Name="Array Editor" Title="Variables"/>
+                  <View Name="Command Window" Title="Command Window"/>
+               </Split>
+               <View Name="Workspace" Title="Workspace"/>
+            </Split>
+         </ReferenceHierarchy>
+      </Location>
+      <Location Context="document" Maximized="yes" Type="floating"/>
+      <DocumentArea Arrangement="maximized" Bar="top" Empty="yes" MaxBarWidth="240" Showing="no" ShrinkTabs="no"/>
+   </Group>
+   <Group Alphabetize="no" CollapseUndockedDocumentToolstrips="no" Dock="no" Guest="no" Name="File Comparisons" PropertyClass="com.mathworks.comparisons.report.ComparisonReportGroup" Show="no" ShowViews="no" Title="Comparison">
+      <Location Context="undocked" External="yes" Height="600" Type="floating" Width="800"/>
+   </Group>
+   <Group Alphabetize="no" CollapseUndockedDocumentToolstrips="no" Dock="no" Guest="no" Name="Doc Center" PropertyClass="com.mathworks.mde.help.MLHelpBrowserGroup" Show="no" ShowViews="no" Title="Help"/>
+   <Client Class="com.mathworks.mde.cmdwin.CmdWin" Dock="yes" Guest="no" Name="Command Window" SelectionOrder="28" Show="yes" Singleton="yes" StatusBarShowing="yes" TearOff="no" Title="Command Window">
+      <Location Context="docked" Height="216" ParentHeight="828" ParentWidth="1266" Path="S" Type="nested" Width="1266" X="18" Y="788"/>
+      <Location Context="nested" Height="216" ParentHeight="828" ParentWidth="1266" Path="S" Type="nested" Width="1266" X="18" Y="788"/>
+   </Client>
+   <Client Class="com.mathworks.mde.cmdhist.AltHistory" Dock="no" Guest="no" Name="Command History" Show="yes" Singleton="yes" StatusBarShowing="yes" TearOff="yes" Title="Command History">
+      <Location Context="docked" Path="EES" Type="nested"/>
+      <Location Anchored="yes" Context="undocked" External="yes" Height="250" Type="floating" Width="400" X="45" Y="745"/>
+   </Client>
+   <Client Class="com.mathworks.mde.explorer.Explorer" Dock="yes" Guest="no" Name="Current Directory" SelectionOrder="13" Show="yes" Singleton="yes" StatusBarShowing="yes" TearOff="no" Title="Current Folder">
+      <Location Context="docked" Edge="left" Height="940" Type="border" Width="422"/>
+      <Location Context="nested" Height="847" ParentHeight="847" ParentWidth="1920" Path="W" Type="nested" Width="422" Y="168">
+         <ReferenceHierarchy>
+            <Split Orientation="leftRight" Position="422">
+               <View Name="Current Directory" Title="Current Folder"/>
+               <Split Orientation="leftRight" Position="1089">
+                  <Split Orientation="topBottom" Position="563">
+                     <Group Name="Editor" Title="Editor"/>
+                     <View Name="Command Window" Title="Command Window"/>
+                  </Split>
+                  <View Name="Workspace" Title="Workspace"/>
+               </Split>
+            </Split>
+         </ReferenceHierarchy>
+      </Location>
+   </Client>
+   <Client Class="com.mathworks.mde.workspace.WorkspaceBrowser" Dock="yes" Guest="no" Name="Workspace" SelectionOrder="12" Show="yes" Singleton="yes" StatusBarShowing="yes" TearOff="no" Title="Workspace">
+      <Location Context="docked" Edge="right" Height="838" Type="border" Width="352"/>
+      <Location Context="nested" Height="838" ParentHeight="838" ParentWidth="1312" Path="E" Type="nested" Width="352" X="981" Y="176">
+         <ReferenceHierarchy>
+            <Split Orientation="leftRight" Position="956">
+               <View Name="Command Window" Title="Command Window"/>
+               <View Name="Workspace" Title="Workspace"/>
+            </Split>
+         </ReferenceHierarchy>
+      </Location>
+   </Client>
+   <Client Class="com.mathworks.mde.profiler.Profiler" Dock="no" Guest="no" Name="Profiler" Show="no" Singleton="yes" StatusBarShowing="yes" TearOff="no" Title="Profiler">
+      <Location Context="docked" Path="EWN" Type="nested"/>
+      <Location Context="undocked" External="yes" Height="600" Type="floating" Width="800"/>
+   </Client>
+   <Client Class="com.mathworks.webintegration.fileexchange.ui.FileExchangeDesktopClientImpl" Dock="yes" Guest="no" Name="File Exchange" Show="no" Singleton="yes" StatusBarShowing="yes" TearOff="no" Title="File Exchange">
+      <Location Context="docked" Path="EWN" Type="nested"/>
+      <Location Context="undocked" External="yes" Height="600" Type="floating" Width="800"/>
+   </Client>
+   <Client Class="com.mathworks.page.plottool.FigurePalette" Dock="yes" Group="Figures" Guest="no" Name="Figure Palette" Show="no" Singleton="yes" StatusBarShowing="yes" TearOff="no" Title="Figure Palette">
+      <Location Context="docked" Path="NW" Type="nested"/>
+   </Client>
+   <Client Class="com.mathworks.page.plottool.PlotBrowser" Dock="yes" Group="Figures" Guest="no" Name="Plot Browser" Show="no" Singleton="yes" StatusBarShowing="yes" TearOff="no" Title="Plot Browser">
+      <Location Context="docked" Path="NEE" Type="nested"/>
+   </Client>
+   <Client Class="com.mathworks.page.plottool.PropertyEditor" Dock="yes" Group="Figures" Guest="no" Name="Property Editor" Show="no" Singleton="yes" StatusBarShowing="yes" TearOff="no" Title="Property Editor">
+      <Location Context="docked" Path="S" Type="nested"/>
+   </Client>
+   <Client Class="com.mathworks.mde.editor.EditorViewClient" Dock="yes" Group="Editor" Guest="no" SelectionOrder="25" Show="yes" Singleton="no" StatusBarShowing="yes" TearOff="no" Title="E:\AndreDParedes\Paredes Data\Zirmi Phagosight Scripts\Zirmi\Script_C_CellKineticMeasures\Zirmi_C1_CellKineticMeasures.m">
+      <Location Context="docked" Maximized="yes" Type="floating"/>
+      <Location Context="floatingIn" Maximized="yes" Type="floating"/>
+      <ClientData EditorFileName="E:\AndreDParedes\Paredes Data\Zirmi Phagosight Scripts\Zirmi\Script_C_CellKineticMeasures\Zirmi_C1_CellKineticMeasures.m"/>
+   </Client>
+   <Client Class="com.mathworks.mde.editor.EditorViewClient" Dock="yes" Group="Editor" Guest="no" SelectionOrder="27" Show="yes" Singleton="no" StatusBarShowing="yes" TearOff="no" Title="E:\AndreDParedes\Paredes Data\Zirmi Phagosight Scripts\Zirmi\Script_C_CellKineticMeasures\Zirmi_C2_DatabaseCellKineticsMeasures.m">
+      <Location Context="docked" Maximized="yes" Type="floating"/>
+      <Location Context="floatingIn" Maximized="yes" Type="floating"/>
+      <ClientData EditorFileName="E:\AndreDParedes\Paredes Data\Zirmi Phagosight Scripts\Zirmi\Script_C_CellKineticMeasures\Zirmi_C2_DatabaseCellKineticsMeasures.m"/>
+   </Client>
+   <Client Class="com.mathworks.mde.editor.EditorViewClient" Dock="yes" Group="Editor" Guest="no" SelectionOrder="14" Show="yes" Singleton="no" StatusBarShowing="yes" TearOff="no" Title="C:\Users\adpar\Sync\Scripts_m\Zirmi\ShortCuts\Zirmi4TraceWoundRegionNotochord.m">
+      <Location Context="docked" Maximized="yes" Type="floating"/>
+      <Location Context="floatingIn" Maximized="yes" Type="floating"/>
+      <ClientData EditorFileName="C:\Users\adpar\Sync\Scripts_m\Zirmi\ShortCuts\Zirmi4TraceWoundRegionNotochord.m"/>
+   </Client>
+   <Client Class="com.mathworks.mde.editor.EditorViewClient" Dock="yes" Group="Editor" Guest="no" SelectionOrder="20" Show="yes" Singleton="no" StatusBarShowing="yes" TearOff="no" Title="E:\AndreDParedes\Paredes Data\Zirmi Phagosight Scripts\GoldenPhagosight\phagosight-master\selectNeutrophilsM.m">
+      <Location Context="docked" Maximized="yes" Type="floating"/>
+      <Location Context="floatingIn" Maximized="yes" Type="floating"/>
+      <ClientData EditorFileName="E:\AndreDParedes\Paredes Data\Zirmi Phagosight Scripts\GoldenPhagosight\phagosight-master\selectNeutrophilsM.m"/>
+   </Client>
+</Layout>
