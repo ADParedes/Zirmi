@@ -1,6 +1,16 @@
 %% Zirmi B4 (SHORTCUT) - Outline Wound region and notochord
+% Update 2019-06-10  Version 1.4
 % created by: Andre Daniel Paredes, PhD
 % email: andre.paredes@ymail.com
+%% Update 2019-06-10
+% When ch_Ph2 is selected incorrectly it can error.  
+% This portion is customized only for ADP experiment setup.
+switch ch_Ph2
+    case{8}
+    otherwise
+        ch_Ph2 = 8;
+        PhagoSight.ch_Ph2 = 8;
+end;
 %% Define variables
 Parameter15      = 2;%%% % input_v=input('What Frame?')    <----------LOAD FROM THIS FRAME FOR EXAMPLE VISUALIZTION TIFS
 display('START2 EXPEDITE:  Performing Wound Region')% http://www.phagosight.org/NF/trackingManual4.php
