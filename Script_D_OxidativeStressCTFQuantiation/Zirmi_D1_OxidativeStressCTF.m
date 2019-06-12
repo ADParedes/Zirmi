@@ -1,9 +1,9 @@
 %% Calculating ROS Generation at Wound Region 
 %2016-10-07 -Updated 2017-09-20- For DICE Indexing
-%STEP 1:  Loading matifiles
-%STEP 2: Load Analysis (selecting Experiment and Position)
+%STEP 1: Shortcut Zimri 0. Loading matifiles
+%STEP 2: Shortcut Zirmi 2. Load Analysis (selecting Experiment and Position)
 %ONCE THAT IS DONE THEN RUN THIS SCRIPT
-%  Version 1.3 09-20-17
+%  Version 1.4.  2019-06-12
 % Written By Andre Daniel Paredes | email @ andre.paredes@ymail.com
 %% Contingency #0 :Computer System Identification
 clc %DO NOT need to have ran PhagoSight
@@ -55,8 +55,8 @@ switch exist('POI') %#ok<EXIST>
     otherwise %POI Does NOT exist - User did not follow execution procedure
         display                   ('No Registered POI or PARAMETER variables')
         warning                   ('Zirmi Cannot Proceed if not Metadata is not recognized')
-        warning                   ('Run Zirmi B0 before proceeding')
-        display                   ('SCRIPT RUN DISCONTINUED')
+        warning                   ('Run Shortcut Zirmi 0 and 2 before proceeding')
+        display                   ('SCRIPT RUN DISCONTINUED - USER NEEDS LOAD METADATA FIRST')
         return
 end;
 %--Select the folder again
@@ -72,6 +72,7 @@ switch boo_user
     case {0,1} %User is ADP
         dir_saveExcel               = strcat('C:\Users\',user,'\OneDrive - University of Illinois at Chicago\PhD Work\PhD matlab\Zirmi_CTF\viaZirmi_xlsx');
         dir_saveMatfiles            = strcat('C:\Users\',user,'\OneDrive - University of Illinois at Chicago\PhD Work\PhD matlab\Zirmi_CTF\viaZirmi_mat');
+        ADP.dir_metadat = dir_saveMatfiles;
     otherwise  %User is not ADP
         boo_saveCTF                 =  isfield(ADP,'boo5');
         switch boo_saveCTF
@@ -192,7 +193,7 @@ disp            (timeuser);
 pause           (2)
 % disp            ('NOTE: To edit modify "arr_timepoints"  and change accordingly')
 %% Part 2: LOOP Quantitate ROS in Region of Injury after Injury
-%for i=(arr_LoopGT) %This was the do the 30 minute interations
+%for i=[1,2,arr_LoopGT] %This was the do the 30 minute interations
 for i=everyframe; % This is to do every single frame 
     %% Set Parameters
     cd(dir_positionName) %Go back to experiment folder
@@ -685,4 +686,7 @@ disp('END: TISSUE DICE')
 % %   boundary= B{k}; % obtain (X,Y) boundary coordinates corresponding to label 'k'
 %% clear variables
 %% clear variables
+disp('Clearing Values')
+winopen(dir_saveMatfiles)
 clearvars -except POI PARAMETERS ADP PhagoSight handles dataIn dataL dataR ch_GFP ch_Ph2 Zirmi DICE
+

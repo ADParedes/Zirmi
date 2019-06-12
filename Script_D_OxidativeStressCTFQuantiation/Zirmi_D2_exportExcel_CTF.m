@@ -1,8 +1,7 @@
 %% Supplementary Script D - Export To Excel
-% 2018-01-03 
 % STEP 1:  Loading matifiles
 % STEP 2:  Run this script
-% Version 1.3 2018-01-03
+% Version 1.4 2019-06-03
 % Written By Andre Daniel Paredes | email @ andre.paredes@ymail.com
 %% Note to User
 clc
@@ -10,11 +9,11 @@ disp ('Best Method to Loading Data For this Plot')
 disp ('Dragging .mat file from directory and placing it in command window')
 %% Define Variables
 if exist('Zirmi') 
-    boo_CTF                  = isfield(Zirmi.CTF,'zeroPixelValues');             % 1 means it exists
+    boo_CTF                  = isfield(Zirmi.Mock,'zeroPixelValues');             % 1 means it exists
     switch boo_CTF
         case {1}
             disp                    ('CTF fish values are registered')            
-            Zirmi.CTF.CTF           = (Zirmi.intDen - ((Zirmi.areaROI).*Zirmi.CTF.zeroPixelValues));
+            Zirmi.CTF.CTF           = (Zirmi.CTF.intDen - ((Zirmi.CTF.areaROI).*Zirmi.Mock.zeroPixelValues));
         otherwise
             disp                    ('CTF fish values are NOT registered')
             warning                 ('Zirmi metaData not registered/loaded for CTF Plotting Script')
