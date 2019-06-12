@@ -61,13 +61,13 @@ switch exist('POI') %#ok<EXIST>
 end;
 %--Select the folder again
 cd                                  (dir_Xfolder);
-disp                                (strcat('Analyzing |Batch:',POI.Parameter10,'|Unique Fish:',POI.Parameter11c,'|')) 
+disp                                (strcat('Analyzing |Batch:',POI.Parameter10a,'|Unique Fish:',POI.Parameter11c,'|')) 
 dir_positionFolder                  = fullfile(dir_Xfolder,POI.Parameter11c);
 [dir_Xfolder, str_positionName, ~]  = fileparts(dir_positionFolder); %break up file name % AS DONE IN 'B:Zebra3-LoadAnalysis'
 disp                                (strcat('START CTF : ',name,'_',str_positionName))
 disp                                ('END: Selected Fish For CTF Analysis') 
 %% Determining where to Save
-disp            (strcat('Hello ',str_user));
+disp            (strcat('Hello Zirmi User :',str_user));
 switch boo_user
     case {0,1} %User is ADP
         dir_saveExcel               = strcat('C:\Users\',user,'\OneDrive - University of Illinois at Chicago\PhD Work\PhD matlab\Zirmi_CTF\viaZirmi_xlsx');
@@ -81,9 +81,15 @@ switch boo_user
                 
             otherwise               
                 disp('Select Directories where files will be saved')
-                dir_saveExcel                   = uigetdir('*.mat*', 'Please Select Directory Where you keep Experiment .mat files');
-                dir_saveMatfiles                = uigetdir('*.mat*', 'Please Select Directory Where you keep Experiment .mat files');
-                [dir_umbrella, ~, ~]            = fileparts(dir_Xfolder); %Identify Presumptuous 
+                % Added Update Version 1.4  
+                [PATHSTR2,NAME2,EXT2] = fileparts(POI.Parameter10e);
+                [PATHSTR,NAME,EXT] = fileparts(PATHSTR2);
+                cd(PATHSTR)
+                ADP.dir_metadat = strcat(PATHSTR,'\Zirmi Data');
+                mkdir(ADP.dir_metadat) 
+                
+                dir_saveExcel                   = ADP.dir_metadat;
+                dir_saveMatfiles                = ADP.dir_metadat;
                 ADP.boo5                        = dir_saveExcel;
                 ADP.boo6                        = dir_saveMatfiles;
                 save(POI.Parameter10b,ADP,'-append')
